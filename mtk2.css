@@ -1,0 +1,111 @@
+/* Reset dasar untuk memastikan tampilan konsisten di semua browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Latar belakang utama dengan warna biru langit */
+  body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Judul halaman yang cerah dan menonjol */
+  h1 {
+    margin: 20px 0;
+    font-size: 3rem;
+    color: #ff6347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Desain untuk tombol navigasi yang menarik */
+  button {
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Efek hover untuk tombol */
+  button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1) rotate(2deg);
+  }
+  
+  /* Area output statistik dengan desain lembut */
+  #output {
+    background-color: #ffffe0;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #555;
+    font-size: 1rem;
+    max-width: 800px;
+  }
+  
+  /* Formulir input dengan warna yang ramah */
+  input[type="number"],
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #ff6347;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s ease;
+  }
+  
+  /* Efek fokus pada input */
+  input[type="number"]:focus,
+  input[type="text"]:focus {
+    border-color: #ff0000;
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Tambahkan animasi klik yang lucu pada tombol */
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  /* Responsivitas - untuk perangkat yang lebih kecil */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  
+    #output {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  
+    #output {
+      padding: 10px;
+    }
+  }
+  
